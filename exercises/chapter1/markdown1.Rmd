@@ -51,7 +51,11 @@ Use markdown to indicate:
 |Cell 3| Cell 4|  
 
 ```{r}
-1+1
-x=3^2
-x
+library(d3heatmap)
+d3heatmap(mtcars)
+test= t.test(mtcars$mpg, mu=15)
 ```
+
+The average mpg of cars that were surveyed was `r mean(mtcars$mpg)`.
+
+My hypothesis test gave a p value of `r test$p.value`.
