@@ -20,11 +20,11 @@ For each knitr code chunk option below
 
   * What happens when `eval=TRUE`?
   * What is the default?
-```{r eval=FALSE}
+```{r}
 colMeans(cars)
 1 + 1
 ```
-Description:
+Description: The default is TRUE and it evaluates the piece of code
 
 ***
 
@@ -32,21 +32,22 @@ Description:
 
   * Other options for results is `markup` and `asis`
   * What is the default?
-```{r results = 'hide'}
+```{r results = 'asis'}
 carmeans = colMeans(cars)
 1 + 1
 ```
-Description:
+
+Description: 'hide' means the results will not show, 'markup' is the dafault and shows results as on console and 'asis' shows a shorter result
 
 ***
 
 ###  echo
   * Try `echo=TRUE`. What's the default value for `echo`?
 
-```{r echo = FALSE}
+```{r }
 plot(cars)
 ```
-Description:
+Description: The default is TRUE and it shows both the code and the output
 
 ***
 
@@ -57,19 +58,19 @@ When adding multiple arguments to a code chunk, separate the arguments by a comm
 ```{r fig.width = 5, fig.height = 4}
 plot(cars)
 ```
-Description:
+Description:  can specify the figure width and height
 
 ***
 
 ### message   
 
-```{r message = FALSE}
+```{r message = TRUE}
 f = function(x) {
   message("Thanks")
   return(x)
 }
 f(10)
 ```
-Description:
+Description: You can suppress messages with message = FALSE. Default is true.
 
 ***
