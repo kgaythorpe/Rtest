@@ -3,9 +3,8 @@ title: "Messing Around"
 author: "Katy Gaythorpe"
 date: "27 September 2017"
 output: ioslides_presentation
-  font-import: http://fonts.googleapis.com/css?family=Risque
-  font-family: 'Comic Sans'
-  class: illustration
+params: 
+  index: 2
 ---
 
 ```{r setup, include=FALSE}
@@ -19,7 +18,10 @@ This is the introduction.
 $$
 x^2
 $$
-
+So if x was 10 and the index was `r params$index` then
+```{r echo=FALSE}
+10^params$index
+```
 ---
 ```{r cars}
 summary(cars)

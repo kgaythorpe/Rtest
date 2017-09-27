@@ -4,47 +4,49 @@ author: "Colin Gillespie"
 output: 
   flexdashboard::flex_dashboard:
     orientation: rows
+    theme: yeti
+params:
+  mu: 10
 ---
 <!--
 %\VignetteEngine{knitr::rmarkdown}
 %\VignetteIndexEntry{Chapter 3: c - Row Orientation Example}
 -->    
-Row
+Row {data-height=50}
 -------------------------------------
     
-### Chart 1
+### Chart 1 {data-width=2}
     
 ```{r}
-plot(rnorm(10))
+plot(rnorm(params$mu))
 ```
    
 
     
-### Chart 2
-    
+### Chart 2  {data-width=1}
 ```{r}
 plot(rnorm(10))
 ```
 
-Row
+
+Row {data-height=25}
 -------------------------------------
 
-### Chart 3
+### Chart 3 {data-width=1}
 
 ```{r}
 plot(rnorm(10))
 ```
 
-Row
--------------------------------------
 
-### Chart 4
+
+### Chart 4 {data-width=1}
 
 ```{r}
 plot(rnorm(10))
 ```
 
-### Chart 5
+### Chart 5 {data-width=1}
 
 ```{r}
 plot(rnorm(10))
