@@ -3,9 +3,9 @@ title: "Messing Around"
 author: "Katy Gaythorpe"
 date: "27 September 2017"
 output: ioslides_presentation
-#font-import: http://fonts.googleapis.com/css?family=Risque
-#font-family: 'Comic Sans'
-#class: illustration
+  font-import: http://fonts.googleapis.com/css?family=Risque
+  font-family: 'Comic Sans'
+  class: illustration
 ---
 
 ```{r setup, include=FALSE}

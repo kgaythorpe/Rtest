@@ -3,7 +3,7 @@ title: "Single Column (Fill)"
 author: "Colin Gillespie"
 output: 
   flexdashboard::flex_dashboard:
-    vertical_layout: fill
+    vertical_layout: scroll
     self_contained: yes
 ---
 <!--
@@ -23,6 +23,24 @@ plot(rnorm(10))
 ```
 
 ### Chart 3
+
+```{r}
+plot(rnorm(10))
+```
+
+### Chart 4
+
+```{r}
+plot(rnorm(10))
+```
+
+### Chart 5
+
+```{r}
+plot(rnorm(10))
+```
+
+### Chart 6
 
 ```{r}
 plot(rnorm(10))
